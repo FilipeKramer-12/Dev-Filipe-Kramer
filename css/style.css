@@ -1,0 +1,197 @@
+/* Fontes */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
+/* font-family: 'Raleway', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;700&display=swap');
+/* font-family: 'Roboto Slab', serif; */
+@import url('https://fonts.googleapis.com/css2?family=Turret+Road:wght@300;400;500;700&display=swap');
+/* font-family: 'Turret Road', cursive; */
+/***/
+
+/* Elementos Padrão */
+body{background-color: black;}
+img{display: block;max-width: 100%;}
+/***/
+
+/* Classes Gerais */
+.txt{
+    font-family: 'Roboto Slab', serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+}
+.sub{
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 26px;
+    letter-spacing: 0.02em;
+}
+.title{
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 35px;
+    letter-spacing: 0.02em;
+}
+.btn{
+    width: 150px;
+    height: 45px;
+    display: block;
+    padding-top: 8px;
+    border-radius: 5px;
+    background-color: #EF5647;
+    border-bottom: 4px solid #eb695d;
+    color: white;
+    margin: 50px auto;
+    cursor: pointer;
+    text-align: center;
+}
+.btn:hover{background-color: #eb695d; }
+.btn:active{
+    position: relative;
+    top: 5px;  
+}
+
+.line-titulo{
+    width: 100%;
+    max-width: 960px;
+	margin:50px auto;
+	position: relative;
+    text-align: center;
+}
+.line-titulo h2{
+	position: relative;
+	display: inline-block;
+	text-align: center;
+    padding:0 10px;
+    background-color: black;
+    color: #EF5647;
+}
+.ln1{
+	position: absolute;
+    height: 4px;
+    border-radius: 5px;
+    width: 100%;
+	top:20px;
+    background-color: #EF5647;
+}
+/***/
+
+/* Header  Desktop*/
+.header{
+    width: 100%;
+    height: 600px;
+    padding-top: 20px;
+    background: url(../img/bg-banner.jpg) no-repeat center;
+    background-size: cover;
+}
+.desktop-menu{text-align: right;}
+.desktop-menu ul li{
+    display: inline-block;
+    margin-left: 20px;
+    margin-top: 30px;
+}
+.desktop-menu ul li a{color: white;}
+.banner{
+    width: 100%;
+    text-align: center;
+    margin-top: 74px;
+}
+.banner-t1{
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 26px;
+    line-height: 31px;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    margin-bottom: 50px;
+}
+.banner-t2{
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 52px;
+    line-height: 61px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    margin-bottom: 50px;
+}
+.banner-t2 span{color: #EF5647;}
+#animate-text{
+    font-family: 'Turret Road', cursive;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 35px;
+    line-height: 38px;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    text-align: center;
+}
+#animate-text::after{
+    content: '|';
+    margin-left: 5px;
+    animation: blink .7s infinite;
+    opacity: 1;  
+}
+@keyframes blink {
+    0%, 100%{opacity: 1;} 
+    50%{opacity: 0;}
+}
+.banner .btn{margin-top: 76px;}
+/***/
+
+/* Section Sobre */
+.img-avatar{
+    width: 154px;
+    height: 154px;
+    background: url(../img/img-avatar.png) no-repeat center;
+    background-size: cover;
+    margin: 50px auto;
+
+} 
+.sobre-content p{    
+    margin: 0 auto;
+    max-width: 700px;
+    text-align: center;
+    color: white;
+}
+/***/
+
+/* Responsivo */
+@media only screen and (max-width: 787px){
+    .header{
+        width: 100%;
+        height: 645px;
+        padding-top: 20px;
+    }
+    .logo a img{margin: 0 auto;}
+    .desktop-menu{text-align: center;}
+    .desktop-menu ul li{margin: 3px 5px;}
+    .desktop-menu ul li a{
+        border: 3px solid #EF5647;
+        width: 135px;
+        padding: 5px;
+        border-radius: 5px;
+        display: block;
+        float: left;
+        font-size: 20px;
+    }
+    .desktop-menu ul li a:hover{
+        background-color: #EF5647;    
+    }
+    .desktop-menu ul li a:active{
+      position: relative;
+      top: 5px;
+    }
+    .banner{margin-top: 45px;}
+    .banner-t2{font-size: 40px;}
+    #animate-text{
+        font-size: 25px;
+        font-weight: 500;
+    }
+}
+/***/
